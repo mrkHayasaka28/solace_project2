@@ -1,0 +1,156 @@
+.selection-box1,
+.selection-box2,
+.selection-box3,
+.selection-box4,
+.selection-box5,
+.selection-box6,
+.selection-box7,
+.selection-box8,
+.selection-box9,
+.selection-box10,
+.selection-box11,
+.selection-box12
+ {
+    display: flex; /* Use flexbox to align text and image */
+    align-items: center; /* Center items vertically */
+    border-radius: 10px;
+    width: 88%;
+    height: 45px; /* Adjust height to fit within container */
+    background-color: #FEFDED;
+    margin-bottom: 10px;
+    border: 1px solid #332941;
+    padding: 0 10px; /* Add padding for some spacing */
+}
+
+
+.box-text1,
+.box-text2,
+.box-text3{
+    color: #332941;
+    font-family: 'Heebo', sans-serif; /* Use Heebo font */
+    font-weight: 800; /* Set font weight to 800 */
+    font-size: 24px; /* Adjust font size as needed */
+    margin-left: 10px; /* Add some spacing between image and text */
+}
+.box-text3,
+.box-text4,
+.box-text5,
+.box-text6,
+.box-text7,
+.box-text8,
+.box-text9,
+.box-text10,
+.box-text11,
+.box-text12,
+.box-text13{
+    color: #332941;
+    font-family: 'Heebo', sans-serif; /* Use Heebo font */
+    font-weight: 800; /* Set font weight to 800 */
+    font-size: 18px; /* Adjust font size as needed */
+    margin-left: 10px; /* Add some spacing between image and text */
+}
+.sizedboxx1,
+.sizedboxx2,
+.sizedboxx3,
+.sizedboxx4,
+.sizedboxx5,
+.sizedboxx6,
+.sizedboxx7,
+.sizedboxx8,
+.sizedboxx9,
+.sizedboxx10,
+.sizedboxx11,
+.sizedboxx12 {
+    width: 2px;
+}
+
+.box-image1,
+.box-image2,
+.box-image3
+ {
+    width: 30px;
+    height: 30px; /* Set image size */
+}
+
+.divider {
+    width: 100%;
+    height: 1px;
+    background-color: #332941;
+    margin: 10px 0; /* Adjust spacing as needed */
+}
+
+.sized-boxx {
+    height: 15px;
+    width: 100%;
+}
+
+.extra-text {
+    font-family: 'Heebo', sans-serif;
+    font-weight: 300;
+    font-size: 26px;
+    color: #332941;
+    text-align: center;
+    width: 100%;
+}
+.box-image4,
+.box-image5,
+.box-image6,
+.box-image7,
+.box-image8,
+.box-image9,
+.box-image10,
+.box-image11,
+.box-image12 {
+    height: 40px;
+    width: 40px;
+    object-fit: fill; 
+}
+.container-image4,
+.container-image5,
+.container-image6,
+.container-image7,
+.container-image8,
+.container-image9,
+.container-image10,
+.container-image11,
+.container-image12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #ddd; /* Optional: Set a background color */
+}
+.container-icon4,
+.container-icon5,
+.container-icon6,
+.container-icon7,
+.container-icon8,
+.container-icon9,
+.container-icon10,
+.container-icon11,
+.container-icon12{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent; /* Optional: Set a background color */
+}
+.box-icon4,
+.box-icon5,
+.box-icon6,
+.box-icon7,
+.box-icon8,
+.box-icon9,
+.box-icon10,
+.box-icon11,
+.box-icon12 {
+    height: 20px;
+    width: 20px;
+    object-fit: fill; 
+}

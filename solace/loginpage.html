@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&display=swap">
+    <style>
+        body {
+            background-color: #FEFDED; /* Set background color to FEFDED */
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-container {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 12px; /* Set padding to 12px on all sides */
+            position: relative; /* Position relative for absolute positioning */
+        }
+
+        .logo {
+            position: absolute; /* Position absolute for custom positioning */
+            top: 12px; /* Add top padding */
+            left: 12px; /* Add left padding */
+            width: 400px; /* Set width to 400px */
+            height: 120px; /* Set height to 120px */
+            background-color: transparent; /* Set background color to red */
+            display: flex;
+            justify-content: space-between; /* Space between items */
+            align-items: center; /* Center items vertically */
+        }
+
+        .login-sheet {
+            width: 750px; /* Set width to 1000px */
+            height: 650px; /* Set height to 800px */
+            background-color: #D2FCFF; /* Set background color to pink */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 20px; /* Add padding to the top */
+            border: 3px solid #332941;
+            border-radius: 10%;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .container {
+            border: 3px solid #332941;
+            width: 320px; /* Set width to 320px */
+            height: 350px; /* Set height to 350px */
+            background-color: transparents; /* Set background color to blue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 120px; /* Set left margin */
+            margin-right: 120px; /* Set right margin */
+            border-top-left-radius: 50%; /* Add border radius */
+            border-top-right-radius: 50%; /* Add border radius */
+        }
+
+        .container1 {
+            border: 3px solid #332941;
+            width: 320px; /* Set width to 320px */
+            height: 350px; /* Set height to 350px */
+            background-color: transparent;/* Set background color to blue */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 120px; /* Set left margin */
+            margin-right: 120px; /* Set right margin */
+            border-top-left-radius: 50%; /* Add border radius */
+            border-top-right-radius: 50%; /* Add border radius */
+        }
+
+        .logo img {
+            padding-right: 130px;
+            width: 80px; /* Set width to 100px */
+            height: 80px; /* Set height to 100px */
+            max-width: 100%; /* Ensure image does not exceed container width */
+            max-height: 100%; /* Ensure image does not exceed container height */
+        }
+
+        .logo-text {
+            color: #332941;
+            font-weight: 800;
+            padding-left: 20px;
+            font-size: 54px; /* Set font size */
+            font-family: 'Heebo', sans-serif; /* Use Heebo font */
+        }
+
+        .container img {
+            height: 340px;
+            width: 340px;
+        }
+
+        .container1 img {
+            height: 350px;
+            width: 350px;  
+        } 
+
+        .content {
+            text-align: center; /* Align text to center */
+            padding-bottom: 0px;
+        }
+        .content1 {
+            text-align: center;
+            padding-bottom: 0px;
+        }
+        .content2 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .content3 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .content4 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .content5 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .content6 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+        .content7 {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        .column-container {
+            padding-right: 300px;
+        }
+
+        .column-container .text {
+            text-align: center;
+            justify-content: center;
+            padding-left: 280px;
+        }
+        .column-container .content1 {
+            position: relative;
+            width: 100%;
+            height: 20px;
+            margin: 30px 0;
+            padding-bottom: 20px;
+            padding-left: 100px;
+        }
+        .content1 input{
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            border: none;
+            outline: none;
+            border: 3px solid rgba(0, 0, 0, 0.833);
+            border-radius: 10px;
+            font-size: 16px;
+            color: #fff;
+            padding: 20px 45px 20px;
+        }
+        .content1 input::placeholder {
+        color: black;
+        }
+        .content1 i{
+            position: absolute;
+            right: 20px;
+            top: 30%;
+            transform: translate(-50%);
+            font-size: 20px;
+        }
+
+        .text {
+            font-family: 'Heeebo', sans-serif; /* Use Heeebo font */
+            font-size: 80px; /* Set font size */
+        }
+
+        /* LOGIN BUTTON */
+        .column-container .content3 {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14.5px;
+            margin: -5px 0 0;
+            padding-left: 100px;
+        }
+
+        .content3 label input{
+            accent-color: #000000;
+            margin-right: 3px;
+        }
+
+        .content3 a{
+            color: #000000;
+            text-decoration: none;
+        }
+
+        .content3 a:hover {
+            text-decoration: underline;
+        }
+        .column-container .btn {
+            width: 128%;
+            height: 45px;
+            background: #bb94f6;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+            cursor: pointer;
+            font-size: 16px;
+            color: #333;
+            font-weight: 600;
+            margin-left: 70px;
+        }
+
+        /*FORGOT PASSWORD*/
+        .content4 a {
+            text-align: center;
+            padding-left: 300px;
+            padding-top: 100px;
+            color: black;
+            font-size: 15px;
+        }
+
+        .column-container .content4 {
+            font-size: 14.5px;
+            text-align: center;
+            margin: 20px 0 15px;
+        }
+        .content4 p a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .content4 p a:hover {
+            text-decoration: underline;
+        }
+
+        /* SOCIAL ICON */
+        .social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center vertically */
+    flex-wrap: wrap; /* Allow wrapping */
+    margin-top: 10px; /* Adjust spacing */
+    margin-left: 260px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin: auto; /* Move to the center */
+}
+
+.google1,
+.google2,
+.google3 {
+    background-color: transparent;
+    border: 3px solid black;
+}
+       </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <span class="logo-text">Solace</span> <!-- Add text before the image -->
+            <img src="assets/self-loveorig.png" alt="Logo"> <!-- Add image -->
+        </div>
+        <!-- Login form will go here -->
+        <div class="row">
+            <div class="container">
+                <img src="assets/mental-health.png" alt="mentalImage">
+            </div>
+            
+            <div class="login-sheet">
+                <div class="column-container">
+                    <div class="content">
+                        <p class="text">Solace</p>
+                    </div>
+                    <div class="content1">
+                        <input type="text" placeholder="Username" required>
+                    </div>
+                    <div class="content1">
+                        <input type="password" placeholder="Password" required>
+                    </div>
+                    <div class="content3">
+                        <label><input type="checkbox">Remember Me</label>
+                    </div>
+                    <button type="submit" href="gg" class="btn">Login</button>
+                    <div class="content4">
+                        <a href="#">Forgot Password?</a>
+                        <div class="social-icons">
+                            <div class="social-icon google1"><span class="fa fa-google"></span></div>
+                            <div class="social-icon google2"><span class="fa fa-google"></span></div>
+                            <div class="social-icon google3"><span class="fa fa-google"></span></div>
+                        </div>
+                    </div>
+                    <div class="content4">
+                        <a href="#">Already have an account?</a>
+                    </div>
+                </div>
+            </div>
+            <div class="container1">
+                <img src="assets/mental-health (3).png" alt="mentalImage1">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
